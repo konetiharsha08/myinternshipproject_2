@@ -1,0 +1,24 @@
+def word_counter(text):
+    """
+    Counts the number of words in the given text.
+    """
+    words = text.split()
+    return len(words)
+
+def main():
+    """
+    Main function to interact with the user.
+    """
+    print("Welcome to the Word Counter Program!")
+    
+    try:
+        user_input = input("Enter a sentence or paragraph: ")
+        word_count = word_counter(user_input)
+        
+        print(f"\nWord Count: {word_count}")
+        
+    except Exception as e:
+        print(f"Error: {e}")
+
+if _name_ == "_main_":
+    main()
